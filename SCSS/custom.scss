@@ -1,0 +1,95 @@
+$body-bg: #212121;
+$body-color: #fff;
+$navbar-dark-color: #212121;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.bg-dark {
+  background-color: $body-bg !important; /* Couleur fixe pour le fond */
+}
+
+.redirect {
+    color: #dec300; /* Couleur par défaut pour les liens */
+}
+
+.nav-link.active {
+  color: #dec300 !important; /* Change la couleur du texte à orange */
+  font-weight: bold; /* Texte en gras */
+  border-bottom: 2px solid #dec300; /* Ajoute une bordure en bas */
+  font-size: 20px;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  color: white; /* Couleur de base des liens */
+  transition: color 0.3s; /* Transition douce pour le changement de couleur */
+
+  i {
+    font-size: 25px; /* Augmente la taille des icônes */
+    margin-left: 5px; /* Espace entre le texte et l'icône */
+    transition: color 0.3s, transform 0.3s; /* Transition douce pour les icônes */
+
+    &:hover {
+      transform: scale(1.1); /* Agrandit légèrement l'icône au survol */
+      color: #dec300; /* Change la couleur de l'icône au survol */
+    }
+  }
+}
+
+.nav-item {
+  a:not(.active):hover {
+    color: #dec300 !important; /* Couleur au survol */
+    transform: scale(1.05); /* Agrandit légèrement l'icône au survol */
+    transition: color 0.3s, transform 0.3s; /* Transition douce pour les icônes */
+  }
+}
+
+.notification {
+  display: none; /* Cacher par défaut */
+  position: fixed; /* Rendre la notification fixe */
+  bottom: 20px; /* Positionner en bas */
+  right: 20px; /* Positionner à droite */
+  background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+  color: white; /* Couleur du texte */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Mettre au-dessus des autres éléments */
+  transition: opacity 2.5s; /* Transition pour l'opacité */
+  width: 300px; /* Largeur fixe */
+  font-style: italic; /* Mettre le texte en italique */
+}
+
+.progress-bar {
+  height: 5px; /* Hauteur de la barre */
+  background-color: #dec300; /* Couleur de la barre */
+  width: 100%; /* Commencer à 100% */
+  transition: width 0s; /* Aucun délai pour l'animation de la largeur */
+}
+
+footer {
+  color: #727272; /* Couleur du texte */
+  padding: 10px; /* Espacement intérieur */
+  text-align: center; /* Centre le texte */
+  position: relative; /* Nécessaire pour le positionnement */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
