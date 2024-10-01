@@ -1,6 +1,7 @@
 $body-bg: #212121;
 $body-color: #fff;
 $navbar-dark-color: #212121;
+$custom-yellow: #dec300;
 
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -15,13 +16,13 @@ $navbar-dark-color: #212121;
 }
 
 .redirect {
-    color: #dec300; /* Couleur par défaut pour les liens */
+    color: $custom-yellow; /* Couleur par défaut pour les liens */
 }
 
 .nav-link.active {
-  color: #dec300 !important; /* Change la couleur du texte à orange */
+  color: $custom-yellow !important; /* Change la couleur du texte à orange */
   font-weight: bold; /* Texte en gras */
-  border-bottom: 2px solid #dec300; /* Ajoute une bordure en bas */
+  border-bottom: 2px solid $custom-yellow; /* Ajoute une bordure en bas */
   font-size: 20px;
 }
 
@@ -37,14 +38,14 @@ $navbar-dark-color: #212121;
 
     &:hover {
       transform: scale(1.1); /* Agrandit légèrement l'icône au survol */
-      color: #dec300; /* Change la couleur de l'icône au survol */
+      color: $custom-yellow; /* Change la couleur de l'icône au survol */
     }
   }
 }
 
 .nav-item {
   a:not(.active):hover {
-    color: #dec300 !important; /* Couleur au survol */
+    color: $custom-yellow !important; /* Couleur au survol */
     transform: scale(1.05); /* Agrandit légèrement l'icône au survol */
     transition: color 0.3s, transform 0.3s; /* Transition douce pour les icônes */
   }
@@ -68,7 +69,7 @@ $navbar-dark-color: #212121;
 
 .progress-bar {
   height: 5px; /* Hauteur de la barre */
-  background-color: #dec300; /* Couleur de la barre */
+  background-color: $custom-yellow; /* Couleur de la barre */
   width: 100%; /* Commencer à 100% */
   transition: width 0s; /* Aucun délai pour l'animation de la largeur */
 }
@@ -92,4 +93,9 @@ main {
 body {
   display: flex;
   flex-direction: column;
+}
+
+.highlight {
+  color: $custom-yellow;
+  font-weight: bold;
 }
