@@ -11,6 +11,13 @@ $custom-yellow: #dec300;
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Mettre le fond derrière le contenu */
+}
+
 .bg-dark {
   background-color: $body-bg !important; /* Couleur fixe pour le fond */
 }
@@ -93,6 +100,7 @@ main {
 body {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .highlight {

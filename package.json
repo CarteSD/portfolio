@@ -9,6 +9,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "particles.js": "^2.0.0",
     "saas": "^1.0.0",
     "sass": "^1.79.4"
   }
