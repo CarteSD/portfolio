@@ -100,10 +100,13 @@ main {
 body {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .highlight {
   color: $custom-yellow;
   font-weight: bold;
+}
+
+.text-justify {
+  text-align: justify;
 }
