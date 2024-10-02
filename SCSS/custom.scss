@@ -15,77 +15,77 @@ $custom-yellow: #dec300;
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Mettre le fond derrière le contenu */
+  z-index: -1; 
 }
 
 .bg-dark {
-  background-color: $body-bg !important; /* Couleur fixe pour le fond */
+  background-color: $body-bg !important; 
 }
 
 .redirect {
-    color: $custom-yellow; /* Couleur par défaut pour les liens */
+    color: $custom-yellow; 
 }
 
 .nav-link.active {
-  color: $custom-yellow !important; /* Change la couleur du texte à orange */
-  font-weight: bold; /* Texte en gras */
-  border-bottom: 2px solid $custom-yellow; /* Ajoute une bordure en bas */
+  color: $custom-yellow !important; 
+  font-weight: bold; 
+  border-bottom: 2px solid $custom-yellow; 
   font-size: 20px;
 }
 
 .nav-link {
   font-family: 'Montserrat', sans-serif;
-  color: white; /* Couleur de base des liens */
-  transition: color 0.3s; /* Transition douce pour le changement de couleur */
+  color: white; 
+  transition: color 0.3s; 
 
   i {
-    font-size: 25px; /* Augmente la taille des icônes */
-    margin-left: 5px; /* Espace entre le texte et l'icône */
-    transition: color 0.3s, transform 0.3s; /* Transition douce pour les icônes */
+    font-size: 25px; 
+    margin-left: 5px; 
+    transition: color 0.3s, transform 0.3s; 
 
     &:hover {
-      transform: scale(1.1); /* Agrandit légèrement l'icône au survol */
-      color: $custom-yellow; /* Change la couleur de l'icône au survol */
+      transform: scale(1.1); 
+      color: $custom-yellow; 
     }
   }
 }
 
 .nav-item {
   a:not(.active):hover {
-    color: $custom-yellow !important; /* Couleur au survol */
-    transform: scale(1.05); /* Agrandit légèrement l'icône au survol */
-    transition: color 0.3s, transform 0.3s; /* Transition douce pour les icônes */
+    color: $custom-yellow !important; 
+    transform: scale(1.05); 
+    transition: color 0.3s, transform 0.3s; 
   }
 }
 
 .notification {
-  display: none; /* Cacher par défaut */
-  position: fixed; /* Rendre la notification fixe */
-  bottom: 20px; /* Positionner en bas */
-  right: 20px; /* Positionner à droite */
-  background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
-  color: white; /* Couleur du texte */
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: white; 
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 1000; /* Mettre au-dessus des autres éléments */
-  transition: opacity 2.5s; /* Transition pour l'opacité */
-  width: 300px; /* Largeur fixe */
-  font-style: italic; /* Mettre le texte en italique */
+  z-index: 1000; 
+  transition: opacity 2.5s; 
+  width: 300px; 
+  font-style: italic; 
 }
 
 .progress-bar {
-  height: 5px; /* Hauteur de la barre */
-  background-color: $custom-yellow; /* Couleur de la barre */
-  width: 100%; /* Commencer à 100% */
-  transition: width 0s; /* Aucun délai pour l'animation de la largeur */
+  height: 5px; 
+  background-color: $custom-yellow; 
+  width: 100%; 
+  transition: width 0s; 
 }
 
 footer {
-  color: #727272; /* Couleur du texte */
-  padding: 10px; /* Espacement intérieur */
-  text-align: center; /* Centre le texte */
-  position: relative; /* Nécessaire pour le positionnement */
+  color: #727272; 
+  padding: 10px; 
+  text-align: center; 
+  position: relative;
 }
 
 html, body {
