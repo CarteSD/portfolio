@@ -44,28 +44,48 @@ $custom-yellow: #c0aa00;
 
 .nav-link {
   font-family: 'Montserrat', sans-serif;
-  color: white; 
-  transition: color 0.3s; 
+  color: white;
+  position: relative;  // Pour permettre de positionner le pseudo-élément
+  padding-bottom: 10px; // Créer de l'espace pour la barre jaune
+  transition: color 0.3s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px; // Épaisseur de la barre jaune
+    background-color: $custom-yellow;
+    transition: width 0.3s, left 0.3s; // Animation de la barre
+  }
+
+  &.active::before,
+  &:hover::before {
+    width: 100%; // La barre occupe toute la largeur de l'élément
+  }
 
   i {
-    font-size: 25px; 
-    margin-left: 5px; 
-    transition: color 0.3s, transform 0.3s; 
+    font-size: 25px;
+    margin-left: 5px;
+    transition: color 0.3s, transform 0.3s;
 
     &:hover {
-      transform: scale(1.1); 
-      color: $custom-yellow; 
+      transform: scale(1.1);
+      color: $custom-yellow;
     }
   }
 }
 
 .nav-item {
   a:not(.active):hover {
-    color: $custom-yellow !important; 
-    transform: scale(1.05); 
-    transition: color 0.3s, transform 0.3s; 
+    color: $custom-yellow !important;
+    transform: scale(1.05);
+    transition: color 0.3s, transform 0.3s;
   }
 }
+
+
 
 .notification {
   display: none; 
@@ -138,4 +158,8 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $custom-yellow;
+}
+
+.text-gray {
+  color : #7e7e7e;
 }
