@@ -16,7 +16,7 @@ $custom-yellow: #c0aa00;
   --bs-btn-hover-bg: $custom-yellow;
   --bs-btn-border-color: #b4a201;
   --bs-btn-hover-border-color: $custom-yellow;
-  --bs-btn-active-bg: #e0c600;
+  --bs-btn-active-bg: $body-bg;
   --bs-btn-disabled-bg: $custom-yellow;
   --bs-btn-disabled-border-color: $custom-yellow;
 }
