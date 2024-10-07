@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
-  <title>Estéban DESESSARD | Expériences</title>
+  <title>Estéban DESESSARD | Formation</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,19 +15,22 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item me-3">
-            <a class="nav-link text-white" href="accueil.html">Accueil</a>
+            <a class="nav-link text-white" href="accueil.php">Accueil</a>
           </li>
           <li class="nav-item me-3">
-            <a class="nav-link text-white" href="formation.html">Formation</a>
+            <a class="nav-link text-white" href="formation.php">Formation</a>
           </li>
           <li class="nav-item me-3">
-            <a class="nav-link active text-white" aria-current="page" href="experiences.html">Expériences</a>
+            <a class="nav-link text-white" href="experiences.php">Expériences</a>
           </li>
           <li class="nav-item me-3">
-            <a class="nav-link text-white" href="projets.html">Projets</a>
+            <a class="nav-link text-white" href="projets.php">Projets</a>
           </li>
           <li class="nav-item me-3">
-            <a class="nav-link text-white" href="competences.html">Compétences</a>
+            <a class="nav-link text-white" href="competences.php">Compétences</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active text-white" aria-current="page" href="contact.html">Contact</a>
           </li>
         </ul>
         </ul>
@@ -43,12 +46,11 @@
             </a>
           </li>
           <li class="nav-item">
-            <span class="nav-link nav-icon text-white copy-icon" id="copyEmail" title="Copier l'adresse e-mail">
-                <i class="fas fa-envelope"></i>
-            </span>
+                            <span class="nav-link nav-icon text-white copy-icon" id="copyEmail" title="Copier l'adresse e-mail">
+                                <i class="fas fa-envelope"></i>
+                            </span>
           </li>
         </ul>
-        </div>
       </div>
     </div>
   </nav>
@@ -60,39 +62,9 @@
 </div>
 
 <main class="container">
-  <h2 class="pb-2">Mes expériences</h2>
+  <h2 class="pb-4">Me contacter</h2>
+  <p>Si mon profil vous intéresse ou si vous désirez des informations supplémentaires, n'hésitez pas à me contacter par e-mail ou bien directement via ce formulaire.</p>
 
-  <div class="row">
-    <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-7">
-            <h5><a href="https://www.bias-aventure.com/" class="redirect">Bias Aventure - Parc accrobranche</a></h5>
-          </div>
-
-          <div class="col-md-5 text-end">
-            <span class="fst-italic">Bias, France<br>Juil. 2021 - Maintenant</span>
-          </div>
-
-          <div>
-            <br>
-            <p class="fw-bold text-justify">
-              Depuis maintenant 4 saisons estivales consécutives, je travaille en tant qu'opérateur dans un parc accrobranche sur la côte landaise. Mes missions sont diverses et variées, il s'agit donc d'être polyvalent et surtout d'avoir une bonne interaction avec la clientèle.
-            </p>
-
-            <span class="text-decoration-underline"> Compétences développées :</span>
-            <ul>
-              <li>Accueil de la clientèle</li>
-              <li>Gestion de la caisse</li>
-              <li>Prévention au danger</li>
-              <li>Travail d'équipe</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    <div class="col-md-4">
-      <img src="src/Team-amico.svg" alt="Image de formation" class="img-fluid">
-    </div>
-  </div>
 </main>
 
 <footer>

@@ -15,19 +15,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item me-3">
-                        <a class="nav-link text-white" href="accueil.html">Accueil</a>
+                        <a class="nav-link text-white" href="accueil.php">Accueil</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link text-white" href="formation.html">Formation</a>
+                        <a class="nav-link text-white" href="formation.php">Formation</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link text-white" href="experiences.html">Expériences</a>
+                        <a class="nav-link text-white" href="experiences.php">Expériences</a>
                     </li>
                     <li class="nav-item me-3">
                         <a class="nav-link active text-white" aria-current="page" href="projets.html">Projets</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link text-white" href="competences.html">Compétences</a>
+                        <a class="nav-link text-white" href="competences.php">Compétences</a>
                     </li>
                 </ul>
                 </ul>
@@ -68,7 +68,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Mon portfolio</h5>
                     <p class="card-text text-justify">Afin de pouvoir continuer à exploiter mes compétences en HTML, CSS & JavaScript, j'ai décidé de créer mon propre portfolio afin d'y faire ressortir ma créativité et ma simplicité.</p>
-                    <a href="./projets/portfolio.html" class="btn btn-primary">Voir les détails</a>
+                    <a href="projets/portfolio.php" class="btn btn-primary">Voir les détails</a>
                 </div>
             </div>
 
@@ -77,7 +77,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Lecteur de diaporama</h5>
                     <p class="card-text text-justify">Durant la SAÉ 2.01, j'ai pu réalisé avec deux autres étudiants un lecteur de diaporama en C++. Ce lecteur charge les images depuis une base de données et permet à l'utilisateur de pouvoir y naviguer.</p>
-                    <a href="./projets/s201-lecteur-de-diaporama.html" class="btn btn-primary">Voir les détails</a>
+                    <a href="projets/s201-lecteur-de-diaporama.php" class="btn btn-primary">Voir les détails</a>
                 </div>
             </div>
         </div>

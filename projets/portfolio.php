@@ -15,19 +15,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item me-3">
-                        <a class="nav-link text-white" href="../accueil.html">Accueil</a>
+                        <a class="nav-link text-white" href="../accueil.php">Accueil</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link text-white" href="../formation.html">Formation</a>
+                        <a class="nav-link text-white" href="../formation.php">Formation</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link text-white" href="../experiences.html">Expériences</a>
+                        <a class="nav-link text-white" href="../experiences.php">Expériences</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link active text-white" aria-current="page"  href="../projets.html">Projets</a>
+                        <a class="nav-link active text-white" aria-current="page"  href="../projets.php">Projets</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link text-white" href="../competences.html">Compétences</a>
+                        <a class="nav-link text-white" href="../competences.php">Compétences</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-white" href="../contact.php">Contact</a>
                     </li>
                 </ul>
                 </ul>
@@ -90,7 +93,7 @@
             </p>
         </div>
     </div>
-    <a href="../projets.html" class="btn btn-primary">Retourner aux projets</a>
+    <a href="../projets.php" class="btn btn-primary">Retourner aux projets</a>
 </main>
 <footer>
     <p>&copy; 2024 Estéban DESESSARD - Tous droits réservés</p>
