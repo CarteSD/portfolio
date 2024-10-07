@@ -46,9 +46,9 @@
             </a>
           </li>
           <li class="nav-item">
-                            <span class="nav-link nav-icon text-white copy-icon" id="copyEmail" title="Copier l'adresse e-mail">
-                                <i class="fas fa-envelope"></i>
-                            </span>
+            <span class="nav-link nav-icon text-white copy-icon" id="copyEmail" title="Copier l'adresse e-mail">
+                <i class="fas fa-envelope"></i>
+            </span>
           </li>
         </ul>
       </div>
@@ -63,7 +63,41 @@
 
 <main class="container">
   <h2 class="pb-4">Me contacter</h2>
-  <p>Si mon profil vous intéresse ou si vous désirez des informations supplémentaires, n'hésitez pas à me contacter par e-mail ou bien directement via ce formulaire.</p>
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <p class="text-justify">Si mon profil vous <span class="highlight">intéresse</span> ou si vous désirez des <span class="highlight">informations supplémentaires</span>, n'hésitez pas à me contacter par e-mail ou bien directement via ce formulaire. Je serai ravis de pouvoir vous répondre dans les plus brefs délais !</p>
+            <hr>
+
+            <form method="post" action="submit.php">
+                <div class="mb-3">
+                    <label for="inputIdentite" class="form-label">Votre Nom & Prénom</label>
+                    <input class="form-control" id="inputIdentite" maxlength="64" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Votre adresse e-mail</label>
+                    <input class="form-control" id="inputEmail" maxlength="128" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputObjet" class="form-label">Objet de votre message</label>
+                    <input class="form-control" id="inputObjet" maxlength="64" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputMessage" class="form-label">Description de votre message</label>
+                    <textarea class="form-control" id="inputMessage" maxlength="2048" rows="5" required></textarea>
+
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">En cochant cette case, vous acceptez d'être recontacté par Estéban DESESSARD à l'adresse e-mail que vous avez renseignée ci-dessus.</label>
+                </div>
+                <button id="submitButton" type="submit" class="btn btn-primary w-100">Envoyer</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="src/Voice-chat-amico.svg" alt="contact">
+        </div>
+    </div>
+
 
 </main>
 

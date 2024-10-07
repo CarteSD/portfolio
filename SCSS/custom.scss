@@ -11,6 +11,21 @@ $custom-yellow: #c0aa00;
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+.form-control:focus {
+  border-color: $custom-yellow;
+  box-shadow: 0 0 0 0.2rem rgba($custom-yellow, 0.25);
+}
+
+input[type="checkbox"]:focus {
+  border-color: $custom-yellow;
+  box-shadow: 0 0 0 0.2rem rgba($custom-yellow, 0.25);
+}
+
+input[type="checkbox"]:checked {
+  background-color: $custom-yellow;
+  border-color: $custom-yellow;
+}
+
 .btn-primary {
   --bs-btn-bg: #b4a201;
   --bs-btn-hover-bg: $custom-yellow;
