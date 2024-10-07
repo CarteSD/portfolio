@@ -30,7 +30,7 @@
             <a class="nav-link text-white" href="competences.php">Compétences</a>
           </li>
           <li class="nav-item me-3">
-            <a class="nav-link active text-white" aria-current="page" href="contact.html">Contact</a>
+            <a class="nav-link active text-white" aria-current="page" href="contact.php">Contact</a>
           </li>
         </ul>
         </ul>

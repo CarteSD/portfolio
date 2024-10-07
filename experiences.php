@@ -21,7 +21,7 @@
             <a class="nav-link text-white" href="formation.php">Formation</a>
           </li>
           <li class="nav-item me-3">
-            <a class="nav-link active text-white" aria-current="page" href="experiences.html">Expériences</a>
+            <a class="nav-link active text-white" aria-current="page" href="experiences.php">Expériences</a>
           </li>
           <li class="nav-item me-3">
             <a class="nav-link text-white" href="projets.php">Projets</a>

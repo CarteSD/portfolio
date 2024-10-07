@@ -24,7 +24,7 @@
                         <a class="nav-link text-white" href="experiences.php">Expériences</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link active text-white" aria-current="page" href="projets.html">Projets</a>
+                        <a class="nav-link active text-white" aria-current="page" href="projets.php">Projets</a>
                     </li>
                     <li class="nav-item me-3">
                         <a class="nav-link text-white" href="competences.php">Compétences</a>

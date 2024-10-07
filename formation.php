@@ -18,7 +18,7 @@
                         <a class="nav-link text-white" href="accueil.php">Accueil</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link active text-white" aria-current="page" href="formation.html">Formation</a>
+                        <a class="nav-link active text-white" aria-current="page" href="formation.php">Formation</a>
                     </li>
                     <li class="nav-item me-3">
                         <a class="nav-link text-white" href="experiences.php">Expériences</a>

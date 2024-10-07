@@ -15,7 +15,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item me-3">
-                            <a class="nav-link active text-white" aria-current="page" href="accueil.html">Accueil</a>
+                            <a class="nav-link active text-white" aria-current="page" href="accueil.php">Accueil</a>
                         </li>
                         <li class="nav-item me-3">
                             <a class="nav-link text-white" href="formation.php">Formation</a>

@@ -27,7 +27,7 @@
                         <a class="nav-link text-white" href="projets.php">Projets</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link active text-white" aria-current="page" href="competences.html">Compétences</a>
+                        <a class="nav-link active text-white" aria-current="page" href="competences.php">Compétences</a>
                     </li>
                     <li class="nav-item me-3">
                         <a class="nav-link text-white" href="contact.php">Contact</a>
