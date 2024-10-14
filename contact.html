@@ -61,6 +61,8 @@
   <div class="progress-bar" id="progressBar"></div>
 </div>
 
+<div id="info"></div>
+
 <main class="container">
   <h2 class="pb-4">Me contacter</h2>
     <div class="row align-items-center">
@@ -68,30 +70,33 @@
             <p class="text-justify">Si mon profil vous <span class="highlight">intéresse</span> ou si vous désirez des <span class="highlight">informations supplémentaires</span>, n'hésitez pas à me contacter par e-mail ou bien directement via ce formulaire. Je serai ravis de pouvoir vous <span class="highlight">répondre dans les plus brefs délais</span> !</p>
             <hr>
 
-            <form method="post" action="submit.php">
+            <div id="validationMessage" class="alert alert-success" style="display: none;">
+
+            </div>
+
+            <div id="contactForm">
                 <div class="mb-3">
                     <label for="inputIdentite" class="form-label">Votre Nom & Prénom</label>
-                    <input class="form-control" id="inputIdentite" maxlength="64" required>
+                    <input class="form-control" id="inputIdentite" name="identite" maxlength="64" required>
                 </div>
                 <div class="mb-3">
                     <label for="inputEmail" class="form-label">Votre adresse e-mail</label>
-                    <input class="form-control" id="inputEmail" maxlength="128" required>
+                    <input class="form-control" id="inputEmail" name="email" maxlength="128" required>
                 </div>
                 <div class="mb-3">
                     <label for="inputObjet" class="form-label">Objet de votre message</label>
-                    <input class="form-control" id="inputObjet" maxlength="64" required>
+                    <input class="form-control" id="inputObjet" name="objet" maxlength="64" required>
                 </div>
                 <div class="mb-3">
                     <label for="inputMessage" class="form-label">Description de votre message</label>
-                    <textarea class="form-control" id="inputMessage" maxlength="2048" rows="5" required></textarea>
-
+                    <textarea class="form-control" id="inputMessage" name="message" maxlength="2048" rows="5" required></textarea>
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">En cochant cette case, vous acceptez d'être recontacté par Estéban DESESSARD à l'adresse e-mail que vous avez renseignée ci-dessus.</label>
+                    <input type="checkbox" class="form-check-input" id="inputCheckbox" name="checkbox" required>
+                    <label class="form-check-label" for="inputCheckbox">En cochant cette case, vous acceptez d'être recontacté par Estéban DESESSARD à l'adresse e-mail que vous avez renseignée ci-dessus.</label>
                 </div>
-                <button id="submitButton" type="submit" class="btn btn-primary w-100">Envoyer</button>
-            </form>
+                <button id="submitButton" onclick="submitForm(this)" class="btn btn-primary w-100">Envoyer</button>
+            </div>
         </div>
         <div class="col-md-6">
             <img src="src/Voice-chat-amico.svg" alt="contact">
@@ -109,3 +114,44 @@
 <script src="index.js"></script>
 </body>
 </html>
+
+<script language="JavaScript">
+    function submitForm(e) {
+        var xhr = getXMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if(this.readyState === 4)
+            {
+                if(this.status === 200)
+                {
+                    document.getElementById('info').innerHTML = this.responseText;
+                }
+                else
+                {
+                    alert("Le serveur n'a pas répondu à la requête : code d'erreur : " + this.status);
+                }
+            }
+        }
+        xhr.open("POST",`submit.php`,true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send("identite=" + document.getElementById('inputIdentite').value + "&email=" + document.getElementById('inputEmail').value + "&objet=" + document.getElementById('inputObjet').value + "&message=" + document.getElementById('inputMessage').value + "&checkbox=" + document.getElementById('inputCheckbox').value);
+    }
+
+    function getXMLHttpRequest() {
+        var xhr = null;
+        if (window.XMLHttpRequest || window.ActiveXObject) {
+            if (window.ActiveXObject) {
+                try {
+                    xhr = new ActiveXObject("Msxml2.XMLHTTP");
+                } catch(e) {
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+            } else {
+                xhr = new XMLHttpRequest();
+            }
+        } else {
+            alert("Votre navigateur ne supporte pas l'objet XMLHTTPRequest...");
+            return null;
+        }
+        return xhr;
+    }
+</script>
