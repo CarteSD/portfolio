@@ -1,4 +1,34 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+require './vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require './vendor/phpmailer/phpmailer/src/SMTP.php';
+require './vendor/phpmailer/phpmailer/src/Exception.php';
+
+function send_mail($from_name, $from_email, $subject, $message) {
+    $mail = new PHPMailer();
+    $mail->isSMTP();
+    $mail->SMTPDebug = 0;
+    $mail->SMTPSecure = 'ssl';
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'carteesde@gmail.com';
+    $mail->Password = 'wnquwmlzvyugezws';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port = 465;
+
+    $mail->setFrom($from_email, $from_name);
+    $mail->addAddress('edesessard@iutbayonne.univ-pau.fr', 'Estéban DESESSARD');
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
+    $mail->Body = $message;
+    $mail->setLanguage('fr', './vendor/phpmailer/phpmailer/language/phpmailer.lang-fr.php');
+
+    return $mail->send();
+}
+
+
 if (
         !empty($_POST["identite"]) &&
         !empty($_POST["email"]) &&
@@ -25,12 +55,7 @@ if (
         return;
     }
 
-    $to = "edesessard@iutbayonne.univ-pau.fr";
-    $subject = "Nouvelle réponse au formulaire du portfolio";
-    $body = "Identité : " . $identite . "\nEmail : " . $email . "\nObjet : " . $objet . "\nMessage : " . $message;
-    $headers = "From: " . $email;
-
-    if (mail($to, $subject, $body, $headers)) {
+    if (send_mail($identite, $email, $objet, $message)) {
         echo "success";
     } else {
         echo "error-envoi-email";
