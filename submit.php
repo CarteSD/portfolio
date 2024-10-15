@@ -43,7 +43,11 @@ if (
     $message = $_POST["message"];
     $checkbox = $_POST["checkbox"];
 
-    // Vérification de la validité de l'identité avec REGEX contenant au moins deux mots
+    // Vérifier si l'identité contient au moins deux mots
+
+
+
+
     if (!preg_match("/^[a-zA-Zéèàêâùïüë\s-]{2,}$/", $identite)) {
         echo "error-validite-identite";
         return;

@@ -3,6 +3,7 @@ $body-color: #fff;
 $navbar-dark-color: #212121;
 $custom-yellow: #c0aa00;
 
+
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
@@ -10,6 +11,12 @@ $custom-yellow: #c0aa00;
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.alert-succes {
+  --bs-alert-bg: rgba(22, 49, 36, 1);
+  --bs-alert-border-color: rgba(22, 49, 36, 1);
+  --bs-alert-color: #fff;
+}
 
 .form-control:focus {
   border-color: $custom-yellow;
