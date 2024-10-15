@@ -48,7 +48,7 @@ if (
 
 
 
-    if (!preg_match("/^[a-zA-Zéèàêâùïüë\s-]{2,}$/", $identite)) {
+    if (!preg_match("/^[\p{L}]+(?:[-\s][\p{L}]+)+$/u", $identite)) {
         echo "error-validite-identite";
         return;
     }

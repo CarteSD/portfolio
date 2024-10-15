@@ -23,6 +23,9 @@ Chaque projet est documenté avec une brève description, les technologies utili
 ### 5. **Compétences**
 Une vue d'ensemble des technologies, langages de programmation et outils que je maîtrise, y compris **HTML, CSS, JavaScript, Bootstrap, Git**, et bien d'autres.
 
+### 6. **Contact**
+Dans le cas où vous désirez mieux me connaître où obtenir quelconque information supplémentaire, un formulaire simple vous permet de rentrer en contact avec moi.
+
 ## 🛠️ Technologies Utilisées
 
 - **HTML5** : Structuration du contenu
