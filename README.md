@@ -33,6 +33,7 @@ Dans le cas où vous désirez mieux me connaître où obtenir quelconque informa
 - **Bootstrap** : Framework utilisé pour accélérer le développement et assurer une compatibilité multi-plateforme
 - **JavaScript** : Ajout d'interactivité sur certaines sections
 - **Git** : Versionnement
+- **Twig** : Moteur de template pour générer des pages HTML
 
 ## 🚀 Fonctionnalités
 
