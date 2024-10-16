@@ -15,22 +15,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item me-3">
-                        <a class="nav-link {% if menu == 'accueil' %}active {% endif %}" aria-current="page" href="accueil.php">Accueil</a>
+                        <a class="nav-link {% if menu == 'accueil' %}active {% endif %}" aria-current="page" href={% block redirect_accueil %}"accueil.php"{% endblock %}>Accueil</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link {% if menu == 'formation' %}active {% endif %}" href="formation.php">Formation</a>
+                        <a class="nav-link {% if menu == 'formation' %}active {% endif %}" href={% block redirect_formation %}"formation.php"{% endblock %}>Formation</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link {% if menu == 'experiences' %}active {% endif %}" href="experiences.php">Expériences</a>
+                        <a class="nav-link {% if menu == 'experiences' %}active {% endif %}" href={% block redirect_experiences %}"experiences.php"{% endblock %}>Expériences</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link {% if menu == 'projets' %}active {% endif %}" href="projets.php">Projets</a>
+                        <a class="nav-link {% if menu == 'projets' %}active {% endif %}" href={% block redirect_projets %}"projets.php"{% endblock %}>Projets</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link {% if menu == 'competences' %}active {% endif %}" href="competences.php">Compétences</a>
+                        <a class="nav-link {% if menu == 'competences' %}active {% endif %}" href={% block redirect_competences %}"competences.php"{% endblock %}>Compétences</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link" href="contact.php">Contact</a>
+                        <a class="nav-link {% if menu == 'contact' %}active {% endif %}" href={% block redirect_contact %}"contact.php"{% endblock %}>Contact</a>
                     </li>
                 </ul>
                 </ul>
@@ -69,7 +69,7 @@
     <a class ="redirect" href="https://storyset.com/people" target="_blank">People illustrations by Storyset</a>
 </footer>
 
-<script src="index.js"></script>
+<script src={% block redirect_indexjs %}"index.js"{% endblock %}></script>
 
 {% block script %}
 {% endblock %}
