@@ -43,17 +43,11 @@ if (
     $message = $_POST["message"];
     $checkbox = $_POST["checkbox"];
 
-    // Vérifier si l'identité contient au moins deux mots
-
-
-
-
     if (!preg_match("/^[\p{L}]+(?:[-\s][\p{L}]+)+$/u", $identite)) {
         echo "error-validite-identite";
         return;
     }
 
-    // Vérification de la validité de l'adresse e-mail
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "error-validite-email";
         return;
