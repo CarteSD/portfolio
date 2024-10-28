@@ -30,14 +30,13 @@ Dans le cas où vous désirez mieux me connaître où obtenir quelconque informa
 
 - **HTML5** : Structuration du contenu
 - **CSS3** : Design personnalisé avec un focus sur l'accessibilité et le responsive
-- **Bootstrap** : Framework utilisé pour accélérer le développement et assurer une compatibilité multi-plateforme
+- **Bootstrap** : Librarie CSS utilisée pour accélérer le développement
 - **JavaScript** : Ajout d'interactivité sur certaines sections
 - **Git** : Versionnement
-- **Twig** : Moteur de template pour générer des pages HTML
+- **Twig** : Moteur de template pour factoriser du code HTML
 
 ## 🚀 Fonctionnalités
 
-- **Responsive** : Le site s'adapte à toutes les tailles d'écran pour une expérience optimale, qu'il soit consulté sur mobile, tablette ou ordinateur.
 - **Navigation fluide** : Grâce à la barre de navigation intuitive et l'organisation claire des contenus.
 - **Design épuré** : Une approche minimaliste pour mettre en avant le contenu et la simplicité de la navigation.
 
@@ -51,7 +50,7 @@ Le projet est actuellement **en cours de développement**, avec des mises à jou
 
 ## 💡 Inspirations
 
-Ce projet est né de la nécessité de créer une plateforme pour présenter mes compétences et projets dans le cadre de la recherche de stage. Il a été entièrement codé à la main en **HTML**, **CSS** et **JavaScript** afin de continuer à m'améliorer en développement front-end.
+Ce projet est né de la nécessité de créer une plateforme pour présenter mes compétences et projets dans le cadre de la recherche de stage. Il a été entièrement codé à la main en **HTML**, **CSS** et **JavaScript** afin de continuer à m'améliorer en développement front-end et back-end.
 
 ## 👤 Auteur
 
