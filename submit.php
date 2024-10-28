@@ -63,5 +63,3 @@ if (
     echo "error-saisi";
 }
 ?>
-
-<script src="index.js"></script>

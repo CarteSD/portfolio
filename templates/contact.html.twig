@@ -47,16 +47,20 @@
 {% block script %}
 <script language="JavaScript">
     function submitForm(e) {
+        var message = document.getElementById('validationMessage');
+        message.style.display = 'block';
+        message.classList.add("alert-warning");
+        message.innerHTML = "<strong>Envoi du message en cours...</strong><br>Cette étape peut prendre quelques secondes.";
         var xhr = getXMLHttpRequest();
         xhr.onreadystatechange = function () {
             if(this.readyState === 4)
             {
                 if(this.status === 200)
                 {
-                    document.getElementById('contactForm').style.display = 'none';
+                    message.classList.remove("alert-success");
+                    message.classList.remove("alert-danger");
+                    message.classList.remove("alert-warning");
                     document.getElementsByClassName('align-items-center')[document.getElementsByClassName('align-items-center').length - 1].classList.remove('align-items-center');
-                    var message = document.getElementById('validationMessage');
-                    message.style.display = 'block';
                     if(this.responseText === "error-validite-identite") {
                         message.classList.add("alert-danger");
                         message.innerHTML = "<strong>Votre message n'a pas pu être envoyé !</strong><br>Merci de renseigner une identité valide.";
@@ -68,7 +72,7 @@
                     }
                     else if(this.responseText === "error-envoi-email") {
                         message.classList.add("alert-danger");
-                        message.innerHTML = "<strong>Votre message n'a pas pu être envoyé !</strong><br>Une erreur s'est déroulée lors de l'envoi du formulaire. Vous pouvez me contacter directement à l'adresse e-mail suivante : edesessard@iutbayonne.univ-pau.fr";
+                        message.innerHTML = "<strong>Votre message n'a pas pu être envoyé !</strong><br>Une erreur s'est déroulée lors de l'envoi du formulaire. Vous pouvez me contacter directement à l'adresse e-mail suivante : edesessard@etud.univ-pau.fr";
                     }
                     else if(this.responseText === "error-saisi") {
                         message.classList.add("alert-danger");
@@ -76,7 +80,7 @@
                     }
                     else if(this.responseText === "success") {
                         message.classList.add("alert-success");
-                        message.innerHTML = "<strong>Votre message a bien été envoyé !</strong><br>Je vous recontacterai à l'adresse e-mail fourni dans les plus brefs délais !";
+                        message.innerHTML = "<strong>Votre message a bien été envoyé !</strong><br>Je vous recontacterai à l'adresse e-mail fournie dans les plus brefs délais !";
                     }
                     else
                     {
