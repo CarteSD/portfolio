@@ -4,7 +4,7 @@ Bienvenue sur le **Portfolio** d'Estéban DESESSARD, étudiant en deuxième ann�
 
 ## 🎯 Objectif
 
-Ce portfolio a pour objectif de regrouper tous mes projets ainsi que les compétences acquises au fil de mon parcours. Il se veut être une plateforme simple, intuitive et responsive permettant de visualiser mon expertise en **développement web**.
+Ce portfolio a pour objectif de regrouper tous mes projets ainsi que les compétences acquises au fil de mon parcours. Il se veut être une plateforme simple, intuitive qui sera dans le futur responsive, permettant de visualiser mon profil plus en détails.
 
 ## 📂 Sections
 
