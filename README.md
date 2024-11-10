@@ -15,7 +15,7 @@ L'accueil offre une introduction rapide à mon profil, mon parcours académique,
 Cette section retrace mon parcours scolaire, détaillant les diplômes et compétences acquises tout au long de ma formation.
 
 ### 3. **Expériences**
-Vous trouverez ici mes expériences professionnelles et académiques, notamment mes stages et projets menés en équipe.
+Vous trouverez ici mes expériences professionnelles avec la liste des compétences que celles-ci ont pu m'apporter.
 
 ### 4. **Projets**
 Chaque projet est documenté avec une brève description, les technologies utilisées, et des captures d'écran du code ou de l'application.
@@ -58,4 +58,4 @@ Ce projet est né de la nécessité de créer une plateforme pour présenter mes
 
 ## 🔗 Lien
 
-Le portfolio est disponible à l'adresse suivante : **[Mon Portfolio](#)**
+Le portfolio est disponible à l'adresse suivante : **[Mon Portfolio](https://esteban-desessard.fr)**
