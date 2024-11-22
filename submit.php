@@ -15,19 +15,18 @@ function send_mail($from_name, $from_email, $subject, $message) {
     $mail = new PHPMailer();
     $mail->isSMTP();
     $mail->SMTPDebug = 0;
-    $mail->SMTPSecure = 'ssl';
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = 'partage.univ-pau.fr';
     $mail->SMTPAuth = true;
     $mail->Username = $_ENV['MAIL_USER'];
     $mail->Password = $_ENV['MAIL_PASS'];
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = 465;
 
-    $mail->setFrom($from_email, $from_name);
+    $mail->setFrom('edesessard@univ-pau.fr', $from_name);
     $mail->addAddress('edesessard@iutbayonne.univ-pau.fr', 'Estéban DESESSARD');
     $mail->isHTML(true);
     $mail->Subject = $subject;
-    $mail->Body = $message;
+    $mail->Body = "Message reçu de : " . $from_name . " (" . $from_email . ")<br><br>" . $message;
     $mail->setLanguage('fr', './vendor/phpmailer/phpmailer/language/phpmailer.lang-fr.php');
 
     return $mail->send();

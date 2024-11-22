@@ -51,6 +51,9 @@
         message.style.display = 'block';
         message.classList.add("alert-warning");
         message.innerHTML = "<strong>Envoi du message en cours...</strong><br>Cette étape peut prendre quelques secondes.";
+        message.classList.remove("alert-success");
+        message.classList.remove("alert-danger");
+        message.classList.add("alert-warning");
         var xhr = getXMLHttpRequest();
         xhr.onreadystatechange = function () {
             if(this.readyState === 4)
