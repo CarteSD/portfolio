@@ -10,8 +10,11 @@
 </head>
 <body class="container">
 <header>
-    <nav class="navbar navbar-expand-lg bg-dark py-10 pb-4 m-2">
+    <nav class="navbar navbar-expand-md bg-dark py-10 pb-4 m-2">
         <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item me-3">
@@ -32,7 +35,6 @@
                     <li class="nav-item me-3">
                         <a class="nav-link {% if menu == 'contact' %}active {% endif %}" href={% block redirect_contact %}"contact.php"{% endblock %}>Contact</a>
                     </li>
-                </ul>
                 </ul>
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
