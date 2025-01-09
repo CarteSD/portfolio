@@ -47,7 +47,7 @@ if (
     $message = $_POST["message"];
     $checkbox = $_POST["checkbox"];
 
-    if (!preg_match("^[\p{L}]+(?:[-\s][\p{L}]+)+\s*$", $identite)) {
+    if (!preg_match("/^[\p{L}]+(?:[-\s][\p{L}]+)+\s*$/u", $identite)) {
         echo "error-validite-identite";
         return;
     }
